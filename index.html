@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Emaase Books</title>
+    <title>Emaase Books</title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            margin:0;
+            background:#f5f5f5;
+        }
+
+        header{
+            background:#0D47A1;
+            color:white;
+            padding:18px;
+            text-align:center;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-around;
+            background:#1565C0;
+            padding:12px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .container{
+            padding:20px;
+        }
+
+        .book{
+            background:white;
+            margin-bottom:15px;
+            padding:15px;
+            border-radius:10px;
+        }
+
+        button{
+            background:#0D47A1;
+            color:white;
+            border:none;
+            padding:10px 18px;
+            border-radius:6px;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>📚 Emaase Books</h1>
-  <p>Welcome to the official library of Wayne Emaase.</p>
 
-  <h2>Available Books</h2>
+<header>
+<h1>📚 Emaase Books</h1>
+</header>
 
-  <ul>
-    <li><strong>Hardwork is the Mother of All Success</strong><br>
-    <button>Read</button></li>
+<nav>
+<a href="#">Home</a>
+<a href="#">Library</a>
+<a href="#">Profile</a>
+</nav>
 
-    <li><strong>A Leader in the Shadow</strong><br>
-    <button>Coming Soon</button></li>
-  </ul>
+<div class="container">
+
+<h2>Available Books</h2>
+
+<div class="book">
+<h3>Hardwork is the Mother of All Success</h3>
+<p>Author: Wayne Emaase</p>
+<button>Read</button>
+</div>
+
+<div class="book">
+<h3>A Leader in the Shadow</h3>
+<p>Coming Soon</p>
+<button disabled>Coming Soon</button>
+</div>
+
+</div>
 
 </body>
 </html>
