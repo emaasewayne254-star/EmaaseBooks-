@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reader - Emaase Books</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Georgia, serif;
+    background:#ffffff;
+    color:#222;
+}
+
+header{
+    background:#0D47A1;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.container{
+    padding:20px;
+    line-height:1.8;
+    font-size:20px;
+}
+
+.controls{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#eee;
+    display:flex;
+    justify-content:space-around;
+    padding:12px;
+}
+
+button{
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    background:#0D47A1;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Hardwork is the Mother of All Success</h2>
+</header>
+
+<div class="container" id="text">
+
+<h3>Chapter One</h3>
+
+<p>
+Success is not an accident. It is the result of consistent effort,
+discipline, patience and hard work. Every great achievement begins
+with a decision to keep moving forward despite challenges.
+</p>
+
+<p>
+Those who embrace hard work develop skills, confidence and resilience.
+Success may not come overnight, but every step taken today builds
+a better tomorrow.
+</p>
+
+</div>
+
+<div class="controls">
+<button onclick="decreaseFont()">A−</button>
+<button onclick="increaseFont()">A+</button>
+<button onclick="toggleDarkMode()">🌙</button>
+</div>
+
+<script>
+let size = 20;
+
+function increaseFont(){
+    size += 2;
+    document.getElementById("text").style.fontSize = size + "px";
+}
+
+function decreaseFont(){
+    if(size > 14){
+        size -= 2;
+        document.getElementById("text").style.fontSize = size + "px";
+    }
+}
+
+function toggleDarkMode(){
+    if(document.body.style.background=="black"){
+        document.body.style.background="white";
+        document.body.style.color="black";
+    }else{
+        document.body.style.background="black";
+        document.body.style.color="white";
+    }
+}
+</script>
+
+</body>
+</html>
